@@ -21,7 +21,7 @@ public class MemberDAOTest {
 
     @Test
     public void getMemberWithMpwTest() throws SQLException {
-        String mid = "lsy";
+        String mid = "swh";
         String mpw = "1234";
        MemberVO memberVO = memberDAO.getMemberWithMpw(mid,mpw);
        log.info("memberVO 조회 확인: " +memberVO );
@@ -32,7 +32,7 @@ public class MemberDAOTest {
     public void updateUuidTest() throws SQLException {
         String uuid = UUID.randomUUID().toString();
         log.info("uuid 랜덤 문자열 샘플 : " + uuid);
-        memberDAO.updateUuid("lsy",uuid);
+        memberDAO.updateUuid("swh",uuid);
 
     }
 

@@ -85,7 +85,7 @@ public class TodoDAOTest {
                 .tno(3L)
                 .title("수정 테스트 중")
                 .finished(true)
-                .dueDate(LocalDate.of(2024, 11, 25))
+                .dueDate(LocalDate.of(2024, 11, 27))
                 .build();
 
         todoDAO.updateOne(todoVO);

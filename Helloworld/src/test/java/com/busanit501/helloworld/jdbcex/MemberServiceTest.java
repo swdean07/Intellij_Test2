@@ -26,7 +26,7 @@ public class MemberServiceTest {
     // 등록
     @Test
     public void loginTest() throws SQLException {
-     MemberDTO memberDTO = memberService.login("lsy", "1234");
+     MemberDTO memberDTO = memberService.login("swh", "1234");
      log.info("MemberService loginTest : " + memberDTO.toString());
     }
 
@@ -34,7 +34,7 @@ public class MemberServiceTest {
     @Test
     public void updateUuidTest() throws SQLException {
         String uuid = UUID.randomUUID().toString();
-        memberService.updateUuid("lsy2",uuid);
+        memberService.updateUuid("swh2",uuid);
     }
 
     // uuid 이용해서 검색해보기.
